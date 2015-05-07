@@ -6,4 +6,4 @@ ABINIT also includes options to optimize the geometry according to the DFT force
 
 Excited states can be computed within the Many-Body Perturbation Theory (the GW approximation and the Bethe-Salpeter equation), and Time-Dependent Density Functional Theory (for molecules). In addition to the main ABINIT code, different utility programs are provided.
 
-ABINIT is a project that favours development and collaboration (short presentation of the ABINIT project - 10 pages in pdf).
+ABINIT is a project that favours development and collaboration (<a href="http://www.abinit.org/about/presentation.pdf">short presentation of the ABINIT project - 10 pages in pdf</a>).
