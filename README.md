@@ -1,11 +1,11 @@
 # abinitdm-portlet
 
-<img width="170" src="http://www.abinit.org/logo.png" border="0">
 <h2>Requirements</h2>
 - JDK 7+
 
 <h2>About this portlet</h2>
 <p align="justify">
+<img width="170" src="http://www.abinit.org/logo.png" border="0">
 ABINIT is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. <br/><br/>
 
 ABINIT also includes options to optimize the geometry according to the DFT forces and stresses, or to perform molecular dynamics simulations using these forces, or to generate dynamical matrices, Born effective charges, and dielectric tensors, based on Density-Functional Perturbation Theory, and many more properties. <br/><br/>
