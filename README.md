@@ -30,6 +30,6 @@ ABINIT is a project that favours development and collaboration (<a href="http://
 
 <a href="http://www.arn.dz/"><img width="150" src="http://www.enpi-info.eu/img/news/ARN.jpg" border="0" title="The Algerian Research Network Home Page"></a>
 
-<a href="http://www.chain-project.eu/"><img width="150" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" title="The CHAIN-REDS Home Page"></a>
+<a href="http://www.chain-project.eu/"><img width="200" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" title="The CHAIN-REDS Home Page"></a>
 </p>
 
