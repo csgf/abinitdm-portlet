@@ -1,0 +1,254 @@
+#!/bin/bash
+
+chmod +x ./curl
+env > env.log
+
+echo "-----------------------------------------------------------------------------------"
+echo "Running host ..." `hostname -f`
+echo "Kernel ........." `uname -r`
+echo "Distribution ..." `head -n1 /etc/issue`
+echo "Arch ..........." `uname -a | awk '{print $12}'`
+echo "CPU  ..........." `cat /proc/cpuinfo | grep -i "model name" | head -1 | awk -F ':' '{print $2}'`
+echo "Memory ........." `cat /proc/meminfo | grep MemTotal | awk {'print $2'}` KB
+echo "Partitions ....." `cat /proc/partitions`
+echo "Uptime host ...." `uptime | sed 's/.*up ([^,]*), .*/1/'`
+echo "Timestamp ......" `date`
+echo "-----------------------------------------------------------------------------------"
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:.
+export VO_NAME=$(voms-proxy-info -vo)
+export VO_VARNAME=$(echo ${VO_NAME} | sed s/"\."/"_"/g | sed s/"-"/"_"/g | awk '{ print toupper($1) }')
+export VO_SWPATH_NAME="VO_"$VO_VARNAME"_SW_DIR"
+export VO_SWPATH_CONTENT=$(echo $VO_SWPATH_NAME | awk '{ cmd=sprintf("echo $%s",$1); system(cmd); }')
+export path="/dpm"
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+INPUT_FILE1=`basename $1`
+INPUT_FILE2=`basename $2`
+INPUT_FILE3=`basename $3`
+
+INPUT_FILE1=`echo ${INPUT_FILE1} | awk -F'_' '{print $NF}'`
+INPUT_FILE2=`echo ${INPUT_FILE2} | awk -F'_' '{print $NF}'`
+INPUT_FILE3=`echo ${INPUT_FILE3} | awk -F'_' '{print $NF}'`
+
+mv `basename $1` ${INPUT_FILE1} 2>/dev/null
+mv `basename $2` ${INPUT_FILE2} 2>/dev/null
+mv `basename $3` ${INPUT_FILE3} 2>/dev/null
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+
+COMPUTING_MODEL=$4
+PROCESSORS=$5
+MIDDLEWARE=$6
+METADATA_HOST=$7
+USERNAME=$8
+DESC="$9"
+PROXY_RFC=${X509_USER_PROXY}
+export DPM_HOST=${10}
+export DPNS_HOST=${10}
+OUTPUTS_LIST=`basename ${11}`
+
+DATETIME=`date +%Y%m%d%H%M%S`
+RELEASE=`uname -r | awk -F'.x86_64' '{print $1}' | awk -F'.' '{print $NF}'`
+DOMAIN_NAME=`dnsdomainname`
+FLAG=true
+
+# Function to fetch the DPM paths with dpns-* CLI
+fetch_DPM_folder_recurse()     
+{
+    for i in $(dpns-ls /$1)
+    do
+        if [ $? -eq 0 ] ; then
+            if [ "X${i}" != "Xhome" ] ; then
+                    fetch_DPM_folder_recurse "$1/$i"
+            else 
+                echo "$1/$i"
+            fi
+        fi
+    done
+}
+
+if [ "X${MIDDLEWARE}" = "XgLite" ] ; then
+	echo;echo "Selected Middleware/Infrastructure = gLite!"
+	WELCOME=" [ STARTING ABINIT-7.6.4 ] on the e-Infrastructure based on the EMI-gLite Middleware"
+	
+	if [ "X${RELEASE}" == "Xel5" ] ; then
+		ABINIT_PATH=${VO_SWPATH_CONTENT}/abinit-7.6.4-sl5-x86_64-gccany/bin
+	        MPI_PATH=${VO_SWPATH_CONTENT}/abinit-7.6.4-sl5-x86_64-gccany/openmpi-1.8.1/bin
+        	LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VO_SWPATH_CONTENT}/abinit-7.6.4-sl5-x86_64-gccany/openmpi-1.8.1/lib
+	else
+		ABINIT_PATH=${VO_SWPATH_CONTENT}/abinit-7.6.4-sl6-x86_64-gccany/bin
+	        MPI_PATH=${VO_SWPATH_CONTENT}/abinit-7.6.4-sl6-x86_64-gccany/openmpi-1.8.1/bin
+        	LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${VO_SWPATH_CONTENT}/abinit-7.6.4-sl6-x86_64-gccany/openmpi-1.8.1/lib
+	fi
+
+	if [ "X${DOMAIN_NAME}" == "Xwn-1.grid.arn.dz" ]; then
+    		LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:${LD_LIBRARY_PATH}
+		MPI_PATH=/usr/lib64/openmpi/bin
+	fi
+
+	echo;echo "[ Infrastructure Settings ]"
+	echo "========================================="
+	echo "MIDDLEWARE        : "${MIDDLEWARE}
+	echo "VO_NAME           : "${VO_NAME}
+	echo "VO_VARNAME        : "${VO_VARNAME}
+	echo "DEFAULT_SE        : "${DPM_HOST}
+	echo "VO_SWPATH_NAME    : "${VO_SWPATH_NAME}
+	echo "VO_SWPATH_CONTENT : "${VO_SWPATH_CONTENT}
+	echo "METADATA_HOST     : "${METADATA_HOST}
+	echo "DESCRIPTION       : "${DESC}
+	echo "RFC PROXY         : "${PROXY_RFC}
+	echo "USERNAME          : "${USERNAME}
+	echo "========================================="
+	echo "[ ABINIT Settings ]"
+	echo "========================================="
+	echo "ABINIT_PATH  	: "${ABINIT_PATH}
+	echo "MPI_PATH  	: "${MPI_PATH}
+	echo "LD_LIBRARY_PATH : "${LD_LIBRARY_PATH}
+	echo "========================================="
+	echo "COMPUTING MODEL : "${COMPUTING_MODEL}
+	echo "# of CPU cores  : "${PROCESSORS}
+	echo "INPUT FILE      : "${INPUT_FILE1}
+	echo " PSEUDO FILEs   : "${INPUT_FILE2}
+	echo "INPUT FILES     : "${INPUT_FILE3}
+	echo "OUTPUTS_LIST    : "${OUTPUTS_LIST}
+	echo "========================================="
+
+	echo;echo "[ CHECKING input files ]"
+	ls -1 ${PWD}
+	if [ ! -e ${INPUT_FILE1} ] && [ ! -e ${INPUT_FILE2} ] && [ ! -e ${INPUT_FILE3} ] ; then
+		echo "[ ABORT ] Input files missing!"
+		FLAG=false
+	fi
+
+	if [ "X${OUTPUTS_LIST}" = "X" ] ; then
+		echo;echo "[ INFO ] You haven't specify any additional output files. "
+                echo "[ INFO ] Only std OUT/ERR will be collected."
+	else
+		echo;echo "[ INFO ] Additional output files will be archived. "
+	fi
+	
+	# Check if the STORAGE PATH does already exist on the EMI-3 DPM Storage Element
+	echo;echo "[ CHECHING/CREATING the storage path ... ]"
+	DPM_STORAGE_PATH=`fetch_DPM_folder_recurse $path`
+	dpns-mkdir ${DPM_STORAGE_PATH}/${VO_NAME}/ABINIT 2>/dev/null >/dev/null
+
+	if [ $? -eq 1 ] ; then
+		echo "The path already does exist on the Grid Storage Element"
+	else
+		echo "The path has been successfully created on the Grid Storage Element"
+		echo dpns-mkdir ${DPM_STORAGE_PATH}/${VO_NAME}/ABINIT 2>/dev/null >/dev/null
+	fi
+fi
+
+echo;echo ${WELCOME}
+echo
+echo "  █████╗ ██████╗ ██╗███╗   ██╗██╗████████╗ "
+echo " ██╔══██╗██╔══██╗██║████╗  ██║██║╚══██╔══╝ "
+echo " ███████║██████╔╝██║██╔██╗ ██║██║   ██║ "  
+echo " ██╔══██║██╔══██╗██║██║╚██╗██║██║   ██║ "
+echo " ██║  ██║██████╔╝██║██║ ╚████║██║   ██║ "
+echo " ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝ "
+
+if [ -f ${ABINIT_PATH}/abinit ] && [ "X${FLAG}" = "Xtrue" ] ; then
+
+	INFILE=$(ls *.files)
+	if [ "X${COMPUTING_MODEL}" = "Xabinit_seq" ] ; then
+		echo;echo "[ STARTING ABINIT-7.6.4 ] - Programming Model = SEQUENTIAL"
+		echo "${ABINIT_PATH}/abinit < ${INFILE}"
+		${ABINIT_PATH}/abinit < ${INFILE} > abinit.log 2>/dev/null
+	else
+	    echo;echo "[ STARTING ABINIT-7.6.4 ] - Programming Model = PARALLEL"
+	    #${MPI_PATH}/mpiexec -np ${PROCESSORS} ${ABINIT_PATH}/abinit < ${INFILE}
+	    echo "${MPI_PATH}/mpiexec ${ABINIT_PATH}/abinit < ${INFILE}"
+	    ${MPI_PATH}/mpiexec ${ABINIT_PATH}/abinit < ${INFILE} > abinit.log 2>/dev/null
+	fi
+
+	echo;echo "[ CHECHING for results ... ]"
+	ls -1 $PWD/
+
+	echo;echo "[ CHECHING the CURL client libraries ... ]"
+	ldd ./curl
+
+	ABINIT_FOLDER=abinit
+	mkdir -p ${ABINIT_FOLDER} 2>/dev/null
+
+	if [ "X${OUTPUTS_LIST}" != "X" ]; then
+		for file in `cat ${OUTPUTS_LIST}`;
+        	do
+                	mv ${file} ${ABINIT_FOLDER}/
+	        done
+	fi
+		
+	cp abinit.log ${ABINIT_FOLDER}/
+
+	echo;echo "[ ARCHIVING results ]"
+	echo "tar cvfz abinit_${USERNAME}_${DATETIME}.tar.gz ${ABINIT_FOLDER} 2>/dev/null"
+	tar cvfz abinit_${USERNAME}_${DATETIME}.tar.gz \
+		${ABINIT_FOLDER} 2>/dev/null
+
+	SIZE=`cat abinit_${USERNAME}_${DATETIME}.tar.gz | wc -c`
+
+	#######################################
+	# Using gLibrary Data Management APIs #
+	#  to upload output files to Grid SE  #
+	#######################################
+
+	echo; echo "[ GETTING the short-lived URL where the actual file(s) should be uploaded ]"
+	URL=`./curl -3 -k -E ${PROXY_RFC} https://${METADATA_HOST}/api/dm/put/${VO_NAME}/abinit_${USERNAME}_${DATETIME}.tar.gz/${DPM_HOST}/${DPM_STORAGE_PATH}/${VO_NAME}/ABINIT/ \
+	| grep -i redirect \
+	| awk '{print $2}' \
+	| awk -F',' '{print $1}' \
+	| awk -F'"' '{print $2}' \
+	| awk -F'"' '{print $1}'`
+
+	if [ "X${URL}" != "X" ] ; then
+		echo "URL = "${URL}
+		echo; echo "[ UPLOADING files in progress ]"
+		curl -T abinit_${USERNAME}_${DATETIME}.tar.gz -X PUT ${URL}
+
+		echo; echo "[ ADDING a new entry with its metadata of a give type ]"
+		TIMESTAMP=`date +%F' '%T`
+		./curl -3 -k -E ${PROXY_RFC} -X POST \
+	       -d "__Replicas=https://${DPM_HOST}/dpm/ct.infn.it/home/${VO_NAME}/ABINIT/abinit_${USERNAME}_${DATETIME}.tar.gz&FileName=abinit_${USERNAME}_${DATETIME}.tar.gz&Size=${SIZE}&Description=${DESC}&FileType=GZIP&Creator=${USERNAME}&SubmissionDate=${TIMESTAMP}" \
+	       https://${METADATA_HOST}/api/ABINIT/Jobs/
+	else 
+		echo "Some errors occurred during the file registration. Please, check log messages"
+		echo "./curl -3 -k -E ${PROXY_RFC} https://${METADATA_HOST}/api/dm/put/${VO_NAME}/abinit_${USERNAME}_${DATETIME}.tar.gz/${DPM_HOST}/${DPM_STORAGE_PATH}/${VO_NAME}/ABINIT/"
+		./curl -3 -k -E ${PROXY_RFC} \
+	        https://${METADATA_HOST}/api/dm/put/${VO_NAME}/abinit_${USERNAME}_${DATETIME}.tar.gz/${DPM_HOST}/${DPM_STORAGE_PATH}/${VO_NAME}/ABINIT/
+		exit
+	fi
+else
+       echo;echo "[ STARTING ABINIT-7.6.4 ]"
+       echo "[ ABORT ] No such file or directory!"
+       exit
+fi
+
+echo
+
+cat <<EOF >> output.README
+#
+# README - ABINIT
+#
+# Giuseppe LA ROCCA, INFN, Italy
+# Mario TORRISI, UNICT, Italy
+# <mailto:{giuseppe.larocca,mario.torrisi}@ct.infn.it>
+#
+
+ABINIT is a package whose main program allows one to find the total energy, charge density and electronic structure of 
+systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using 
+pseudo-potentials and a planewave or wavelet basis. 
+
+ABINIT also includes options to optimize the geometry according to the DFT forces and stresses, or to perform molecular 
+dynamics simulations using these forces, or to generate dynamical matrices, Born effective charges, and dielectric tensors, 
+based on Density-Functional Perturbation Theory, and many more properties.
+
+In case of success ABINIT will produce the following list of files:
+
+~ std.txt:	the standard output file;
+~ std.err:  	the standard error file;
+~ abinit.log:  	the abinit log file;
+~ env.log:	the remote server env. variables log file.
+
+ABINIT output files 'abinit_${USERNAME}_${DATETIME}.tar.gz' will be available for downloading through the ABINIT Browse service.
+EOF
