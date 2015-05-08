@@ -2,6 +2,8 @@
 
 <h2>Requirements</h2>
 - JDK 7+
+- JSAGA 1.1.x+
+- jsaga-job-management-1.5.96+
 
 <h2>About this portlet</h2>
 <p align="justify">
