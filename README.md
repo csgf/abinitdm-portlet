@@ -16,8 +16,8 @@ Excited states can be computed within the Many-Body Perturbation Theory (the GW 
 
 ABINIT is a project that favours development and collaboration (<a href="http://www.abinit.org/about/presentation.pdf">short presentation of the ABINIT project - 10 pages in pdf</a>).<br/><br/>
 
-A JSR-286 portlet running ABINIT is available both on the:
-- <a href="http://science-gateway.chain-project.eu/"><img width="170" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" 
+This JSR-286 portlet has been fully supported by the 
+<a href="http://science-gateway.chain-project.eu/"><img width="170" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" 
      title="The CHAIN-REDS Science Gateway"></a>
 </p>
 
