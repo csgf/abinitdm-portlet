@@ -1,6 +1,8 @@
 # abinitdm-portlet
 
 <img width="170" src="http://www.abinit.org/logo.png" border="0">
+
+<h2>About this portlet</h2>
 <p align="justify">
 ABINIT is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. <br/><br/>
 
