@@ -5,7 +5,7 @@
 - JSAGA libs (v1.1.x)
 - jsaga-job-management (v1.5.96+)
 
-<h2>About the application</h2>
+<h2>About the ABINIT application</h2>
 <p align="justify">
 <img width="170" src="http://www.abinit.org/logo.png" border="0">
 is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. <br/><br/>
