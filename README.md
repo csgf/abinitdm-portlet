@@ -15,10 +15,6 @@ ABINIT also includes options to optimize the geometry according to the DFT force
 Excited states can be computed within the Many-Body Perturbation Theory (the GW approximation and the Bethe-Salpeter equation), and Time-Dependent Density Functional Theory (for molecules). In addition to the main ABINIT code, different utility programs are provided. <br/><br/>
 
 ABINIT is a project that favours development and collaboration (<a href="http://www.abinit.org/about/presentation.pdf">short presentation of the ABINIT project - 10 pages in pdf</a>).<br/><br/>
-
-This JSR-286 portlet has been fully supported by the 
-<a href="http://science-gateway.chain-project.eu/"><img width="170" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" 
-     title="The CHAIN-REDS Science Gateway"></a>
 </p>
 
 <h2>Contribute</h2>
@@ -27,4 +23,8 @@ This JSR-286 portlet has been fully supported by the
 - Commit your changes (git commit -am "My changes")
 - Push to the branch (git push origin my_markup)
 - Create an Issue with a link to your branch
+ 
+<h2>Sponsor</h2>
+This JSR-286 portlet has been fully supported by the 
+<a href="http://science-gateway.chain-project.eu/"><img width="100" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" title="The CHAIN-REDS Science Gateway"></a>
 
