@@ -1,6 +1,8 @@
 # abinitdm-portlet
 
 <img width="170" src="http://www.abinit.org/logo.png" border="0">
+<h2>Requirements</h2>
+- JDK 7+
 
 <h2>About this portlet</h2>
 <p align="justify">
