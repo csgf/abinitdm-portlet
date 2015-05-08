@@ -5,7 +5,7 @@
 - JSAGA libs (v1.1.x)
 - jsaga-job-management (v1.5.96+)
 
-<h2>About this portlet</h2>
+<h2>About the application</h2>
 <p align="justify">
 <img width="170" src="http://www.abinit.org/logo.png" border="0">
 is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. <br/><br/>
@@ -14,7 +14,11 @@ ABINIT also includes options to optimize the geometry according to the DFT force
 
 Excited states can be computed within the Many-Body Perturbation Theory (the GW approximation and the Bethe-Salpeter equation), and Time-Dependent Density Functional Theory (for molecules). In addition to the main ABINIT code, different utility programs are provided. <br/><br/>
 
-ABINIT is a project that favours development and collaboration (<a href="http://www.abinit.org/about/presentation.pdf">short presentation of the ABINIT project - 10 pages in pdf</a>).
+ABINIT is a project that favours development and collaboration (<a href="http://www.abinit.org/about/presentation.pdf">short presentation of the ABINIT project - 10 pages in pdf</a>).<br/><br/>
+
+A JSR-286 portlet running ABINIT is available both on the:
+- <a href="http://science-gateway.chain-project.eu/"><img width="170" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" 
+     title="The CHAIN-REDS Science Gateway"></a>
 </p>
 
 <h2>Contribute</h2>
