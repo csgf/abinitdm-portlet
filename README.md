@@ -26,5 +26,5 @@ ABINIT is a project that favours development and collaboration (<a href="http://
  
 <h2>Sponsor</h2>
 This JSR-286 portlet has been fully supported by the 
-<a href="http://science-gateway.chain-project.eu/"><img width="100" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" title="The CHAIN-REDS Science Gateway"></a>
+<a href="http://www.chain-project.eu/"><img width="100" src="https://www.chain-project.eu/image/image_gallery?uuid=4b273102-2ed0-49ca-929f-c23379318171&groupId=3456180&t=1424446552904" border="0" title="The CHAIN-REDS Science Gateway"></a>
 
