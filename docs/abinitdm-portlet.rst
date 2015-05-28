@@ -105,14 +105,18 @@ Support
 ============
 Please feel free to contact us any time if you have any questions or comments.
 
-:Authors:
- `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN),
+.. _INFN: http://www.ct.infn.it/
+.. _DFA: http://www.dfa.unict.it/
+.. _CERIST: http://www.cerist.dz/
 
- `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (UniCT),
+:Authors:
+ `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+
+ `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_),
 
  `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
 
- `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ CERIST,
+ `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ (CERIST_),
 
 :Version: v2.0.1, 2015
 
