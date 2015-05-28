@@ -103,7 +103,7 @@ For demonstrative use cases, the user can also click on 'Run Demo' and execute A
 ============
 Support
 ============
-For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
+Please feel free to contact `me <mailto:giuseppe.larocca@ct.infn.it>`_ any time if you have any questions or comments.
 
 :Authors:
  Giuseppe LA ROCCA - Italian National Institute of Nuclear Physics (INFN),
