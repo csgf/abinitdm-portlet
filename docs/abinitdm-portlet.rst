@@ -104,7 +104,7 @@ Please feel free to contact us any time if you have any questions or comments.
 
 .. _INFN: http://www.ct.infn.it/
 .. _DFA: http://www.dfa.unict.it/
-.. _CERIST: http://www.cerist.dz/
+.. _ARN: http://www.grid.arn.dz/
 
 :Authors:
  `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
@@ -113,7 +113,7 @@ Please feel free to contact us any time if you have any questions or comments.
 
  `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
 
- `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ - Centre de Recherche sur l'Information Scientifique (CERIST_),
+ `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ - Algerian Research Network (ARN_),
 
 :Version: v2.0.1, 2015
 
