@@ -101,6 +101,14 @@ For demonstrative use cases, the user can also click on _'Run demo'_ and execute
    :align: center
 
 ============
+References
+============
+
+.. _1: http://agenda.ct.infn.it/event/1110/
+
+* CHAIN-REDS Conference: "Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress" March 31, 2015 – Brussels, Belgium [1_];
+
+============
 Support
 ============
 Please feel free to contact us any time if you have any questions or comments.
@@ -120,4 +128,4 @@ Please feel free to contact us any time if you have any questions or comments.
 
 :Version: v2.0.1, 2015
 
-:Date: May 28th, 2015 17:18
+:Date: May 28th, 2015 17:50
