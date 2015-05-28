@@ -106,7 +106,7 @@ References
 
 .. _1: http://agenda.ct.infn.it/event/1110/
 
-* CHAIN-REDS Conference: "Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress" March 31, 2015 – Brussels, Belgium [1_];
+* CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"*, March 31, 2015 – Brussels, Belgium [1_];
 
 ============
 Support
