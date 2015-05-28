@@ -2,10 +2,8 @@
 About
 ============
 
-:Author: Giuseppe LAROCCA
-:Date: May 28th, 2015 16:10
-
-.. contents::
+.. Contents::
+-------------
 
 .. image:: images/ABINIT_logo.png
    :height: 100px
@@ -119,3 +117,6 @@ For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
  Ouafa BENTALB, CERIST
 
 :Version: v2.0.1
+
+:Date: May 28th, 2015 16:10
+
