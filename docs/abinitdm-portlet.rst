@@ -89,7 +89,7 @@ The ABINIT input files consist of:
 
 - A file of files (.files).
 
-For demonstrative use cases, the user can also click on 'Run Demo' and execute ABINIT with the pre-configured input datasets.
+For demonstrative use cases, the user can also click on 'Run Demo' and execute ABINIT with some pre-configured inputs.
 
 .. image:: images/ABINIT_input.jpg
    :width: 100px
