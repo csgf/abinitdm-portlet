@@ -2,8 +2,6 @@
 About
 ============
 
-.. Contents::
-
 .. image:: images/ABINIT_logo.png
    :height: 100px
    :align: left
