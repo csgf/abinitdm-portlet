@@ -49,7 +49,9 @@ As soon as the portlet has been successfully deployed on the Science Gateway the
 
 In Fig. 1 is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
 
-.. image:: images/ABINIT_settings.jpg
+.. figure:: images/ABINIT_settings.jpg
+   :scale: 50%
+   :alt: text here
    :align: center
    
    This is the caption of the figure
