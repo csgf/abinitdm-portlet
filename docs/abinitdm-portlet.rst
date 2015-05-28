@@ -108,5 +108,6 @@ For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
 
  Ouafa BENTALB, CERIST
 
-:Version: 2.0.1, 2014-2015
+:Version: v2.0.1
+          2014-2015
 
