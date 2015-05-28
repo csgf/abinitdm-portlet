@@ -99,10 +99,13 @@ Support
 ============
 For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
 
-:Author:
+:Authors:
  Giuseppe LA ROCCA, INFN
+
  Mario TORRISI, UniCT
+
  Brahim LAGOUN,
+
  Ouafa BENTALB, CERIST
 
 :Version: 2.0.1, 2014-2015
