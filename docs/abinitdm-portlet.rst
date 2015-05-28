@@ -74,7 +74,6 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
    :width: 100px
    :align: center
 
-
 ============
 Usage
 ============
@@ -90,6 +89,10 @@ The ABINIT input files consist of:
 - A file of files (.files).
 
 For demonstrative use cases, the user can also click on 'Run Demo'.
+
+.. image:: images/ABINIT_input.jpg
+   :width: 100px
+   :align: center
 
 ============
 Support
