@@ -106,13 +106,13 @@ Support
 Please feel free to contact `me <mailto:giuseppe.larocca@ct.infn.it>`_ any time if you have any questions or comments.
 
 :Authors:
- Giuseppe LA ROCCA - Italian National Institute of Nuclear Physics (INFN),
+ `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN),
 
- Mario TORRISI - University of Catania (UniCT),
+ `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (UniCT),
 
- Brahim LAGOUN,
+ `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
 
- Ouafa BENTALB, CERIST
+ `Ouafa BENTALB <amilto:o.bentaleb@grid.arn.dz>`_ CERIST,
 
 :Version: v2.0.1, 2015
 
