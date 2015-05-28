@@ -119,7 +119,7 @@ Please feel free to contact `me <mailto:giuseppe.larocca@ct.infn.it>`_ any time 
 :Date: May 28th, 2015 16:21
 
 .. |chainreds| image:: images/chain-logo-220x124.png
-   :width: 10pt
-   :height: 10pt
+   :width: 50pt
+   :height: 28pt
 
 This work has been fully supported by |chainreds|
