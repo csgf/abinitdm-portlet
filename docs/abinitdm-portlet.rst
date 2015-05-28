@@ -97,5 +97,13 @@ For demonstrative use cases, the user can also click on 'Run Demo'.
 ============
 Support
 ============
-For any support, please contact `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_
+For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
+
+:Author:
+ Giuseppe LA ROCCA, INFN
+ Mario TORRISI, UniCT
+ Brahim LAGOUN,
+ Ouafa BENTALB, CERIST
+
+:Version: 2.0.1, 2014-2015
 
