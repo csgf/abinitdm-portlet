@@ -16,6 +16,9 @@ Excited states can be computed within the Many-Body Perturbation Theory (the GW 
 
 ABINIT is a project that favours development and collaboration `(short presentation of the ABINIT project) <http://www.abinit.org/about/presentation.pdf>`_.
 
+.. sidebar:: WARNING
+           Please, contact VO site-admin to configure the settings for your e-Infrastructure  
+
 ============
 Installation
 ============
@@ -47,7 +50,7 @@ As soon as the portlet has been successfully deployed on the Science Gateway the
 
 **Serial Number**: The MD5SUM of the robot certificate to be used for this e-Infrastructure;
 
-**WebDAV**: The EMI-3 DPM Storage Element to be used for this e-Infrastructure;
+**WebDAV**: The EMI-3 DPM Grid Storage Element, with WebDAV interface, to be used for this e-Infrastructure;
 
 In Fig. 1 is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
 
@@ -55,18 +58,13 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
    :width: 100px
    :align: center
 
-
-.. sidebar:: WARNING
-        Please, contact VO site-admin to configure the settings for your e-Infrastructure   
-
-
 2.) To configure the application, the following settings have to be provided:
 
 **AppID**: The ApplicationID as registered in the UserTracking MySQL database (GridOperations table);
 
-**Log Level**: The log level for the application (e.g.: INFO, VERBOSE);
+**Log Level**: The log level for the application (e.g.: *INFO* or *VERBOSE*);
 
-**Metadata Host**: The Metadata hostname where download/upload digital-assets (e.g. glibrary.ct.infn.it);
+**Metadata Host**: The Metadata hostname where download/upload digital-assets (e.g. *glibrary.ct.infn.it*);
 
 **Software TAG**: The list of software tags requested by the application;
 
