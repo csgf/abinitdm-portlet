@@ -103,7 +103,7 @@ For demonstrative use cases, the user can also click on _'Run demo'_ and execute
 ============
 Support
 ============
-Please feel free to contact `me <mailto:giuseppe.larocca@ct.infn.it>`_ any time if you have any questions or comments.
+Please feel free to contact us any time if you have any questions or comments.
 
 :Authors:
  `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN),
@@ -112,7 +112,7 @@ Please feel free to contact `me <mailto:giuseppe.larocca@ct.infn.it>`_ any time 
 
  `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
 
- `Ouafa BENTALB <amilto:o.bentaleb@grid.arn.dz>`_ CERIST,
+ `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ CERIST,
 
 :Version: v2.0.1, 2015
 
