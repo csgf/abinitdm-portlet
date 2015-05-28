@@ -1,6 +1,12 @@
 ============
 About
 ============
+
+:Author: Giuseppe LAROCCA
+:Date: May 28th, 2015 16:10
+
+.. contents::
+
 .. image:: images/ABINIT_logo.png
    :height: 100px
    :align: left
@@ -52,7 +58,10 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 .. image:: images/ABINIT_settings.jpg
    :width: 100px
    :align: center
-   
+
+.. sidebar:: WARNING
+
+Please, contact VO site-admin to configure the settings for your e-Infrastructure   
 
 
 2.) To configure the application, the following settings have to be provided:
@@ -110,8 +119,3 @@ For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
  Ouafa BENTALB, CERIST
 
 :Version: v2.0.1
-
-.. |date| date::
-.. |time| date:: %H:%M
-
-This documentation has been generated on |date| at |time|.
