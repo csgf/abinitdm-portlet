@@ -104,12 +104,12 @@ For demonstrative use cases, the user can also click on _'Run demo'_ and execute
 References
 ============
 
-.. _conf1: http://asrenorg.net/eage2014/sites/default/files/files/firstStepAbinit.ppt
-.. _conf2: http://agenda.ct.infn.it/event/1110/
+.. _1: http://asrenorg.net/eage2014/sites/default/files/files/firstStepAbinit.ppt
+.. _2: http://agenda.ct.infn.it/event/1110/
 
-* e-AGE 2014 - *"International Connectivity of the Pan Arab Network"* - December 10-11, 2014 – Muscat, Oman [conf1_];
+* e-AGE 2014 - *"International Connectivity of the Pan Arab Network"* - December 10-11, 2014 – Muscat, Oman [1_];
 
-* CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"* – March 31, 2015 – Brussels, Belgium [conf2_];
+* CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"* – March 31, 2015 – Brussels, Belgium [2_];
 
 ============
 Support
