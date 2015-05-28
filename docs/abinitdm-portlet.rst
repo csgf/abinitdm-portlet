@@ -59,9 +59,9 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
    :width: 100px
    :align: center
 
-.. sidebar:: WARNING
 
-Please, contact VO site-admin to configure the settings for your e-Infrastructure   
+.. sidebar:: WARNING
+        Please, contact VO site-admin to configure the settings for your e-Infrastructure   
 
 
 2.) To configure the application, the following settings have to be provided:
