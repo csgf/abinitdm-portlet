@@ -100,14 +100,13 @@ Support
 For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
 
 :Authors:
- Giuseppe LA ROCCA, INFN
+ Giuseppe LA ROCCA - Italian National Institute of Nuclear Physics (INFN),
 
- Mario TORRISI, UniCT
+ Mario TORRISI - University of Catania (UniCT),
 
  Brahim LAGOUN,
 
  Ouafa BENTALB, CERIST
 
-:Version: v2.0.1
-          2014-2015
+:Version: v2.0.1 (2014-2015)
 
