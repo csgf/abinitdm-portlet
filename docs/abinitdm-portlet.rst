@@ -4,6 +4,7 @@ About
 .. image:: images/ABINIT_logo.png
    :height: 100px
    :align: left
+   :target: http://www.abinit.org/
 
 .. class:: justify
 is a package whose main program allows one to find the total energy, charge density and electronic structure of systems made of electrons and nuclei (molecules and periodic solids) within Density Functional Theory (DFT), using pseudopotentials and a planewave or wavelet basis. 
@@ -49,14 +50,11 @@ As soon as the portlet has been successfully deployed on the Science Gateway the
 
 In Fig. 1 is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
 
-.. figure:: images/ABINIT_settings.jpg
-   :scale: 50%
+.. image:: images/ABINIT_settings.jpg
+   :width: 100px
    :alt: text here
    :align: center
    
-   This is the caption of the figure
-   
-   This is the legend of the figure
 
 2.) To configure the application, the following settings have to be provided:
 
