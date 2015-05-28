@@ -113,7 +113,7 @@ Please feel free to contact us any time if you have any questions or comments.
 
  `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
 
- `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ Centre de Recherche sur l'Information Scientifique (CERIST_),
+ `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ - Centre de Recherche sur l'Information Scientifique (CERIST_),
 
 :Version: v2.0.1, 2015
 
