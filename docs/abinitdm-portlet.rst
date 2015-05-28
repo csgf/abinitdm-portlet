@@ -97,5 +97,5 @@ For demonstrative use cases, the user can also click on 'Run Demo'.
 ============
 Support
 ============
-To get support please contact `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_
+For any support, please contact `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_
 
