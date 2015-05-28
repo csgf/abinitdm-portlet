@@ -52,9 +52,9 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 
 .. image:: images/ABINIT_settings.jpg
    :width: 100px
-   :alt: text here
    :align: center
    
+
 
 2.) To configure the application, the following settings have to be provided:
 
@@ -70,10 +70,26 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 
 **Sender**: The FROM e-mail address to send notification messages about the jobs execution to users;
 
+.. image:: images/ABINIT_settings2.jpg
+   :width: 100px
+   :align: center
+
+
 ============
 Usage
 ============
-bla bla ...
+The run abinit simulation the user has to click on the third accordion select the type of job to run (e.g. 'Sequential' or 'Parallel')
+and upload the input files.
+
+The ABINIT input files consist of:
+
+- An input file (.in);
+
+- A list of Pseudo Potential files;
+
+- A file of files (.files).
+
+For demonstrative use cases, the user can also click on 'Run Demo'.
 
 ============
 Support
