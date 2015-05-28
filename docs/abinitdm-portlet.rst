@@ -18,12 +18,6 @@ Excited states can be computed within the Many-Body Perturbation Theory (the GW 
 
 ABINIT_ is a project that favours development and collaboration `(short presentation of the ABINIT project) <http://www.abinit.org/about/presentation.pdf>`_.
 
-.. sidebar:: WARNING
-       
-    Please, contact VO site-admin to configure the settings for your e-Infrastructure  
-
-    hddd s 
-
 ============
 Installation
 ============
@@ -89,7 +83,7 @@ Usage
 The run abinit simulation the user has to click on the third accordion, select the type of job to run (e.g. *'Sequential'* or *'Parallel'*)
 and upload the input files.
 
-The ABINIT input files consist of:
+The ABINIT_ input files consist of:
 
 - An input file (.in);
 
@@ -97,7 +91,7 @@ The ABINIT input files consist of:
 
 - A file of files (.files).
 
-For demonstrative use cases, the user can also click on _'Run demo'_ and execute ABINIT with some pre-configured inputs.
+For demonstrative use cases, the user can also click on _'Run demo'_ and execute ABINIT_ with some pre-configured inputs.
 
 .. image:: images/ABINIT_input.jpg
    :width: 100px
