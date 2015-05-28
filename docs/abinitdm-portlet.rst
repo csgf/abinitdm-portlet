@@ -69,6 +69,8 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 
 **Sender**: The FROM e-mail address to send notification messages about the jobs execution to users;
 
+In Fig. 2 is shown how the application has been set.
+
 .. image:: images/ABINIT_settings2.jpg
    :width: 100px
    :align: center
