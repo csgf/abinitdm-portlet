@@ -111,5 +111,7 @@ For any support, please ask for `support <mailto:giuseppe.larocca@ct.infn.it>`_
 
 :Version: v2.0.1
 
-Copyright |copy| 2014-2015, |---|
-All rights reserved
+.. |date| date::
+.. |time| date:: %H:%M
+
+This documentation has been generated on |date| at |time|.
