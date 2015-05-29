@@ -73,6 +73,7 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 **Sender**: The FROM e-mail address to send notification messages about the jobs execution to users;
 
 .. _CHAIN-REDS: https://science-gateway.chain-project.eu/
+.. _gLibrary: https://glibrary.ct.infn.it/
 
 In Fig. 2 is shown how the application settings have been configured to run on the CHAIN-REDS_ Science Gateway.
 
@@ -106,7 +107,7 @@ Each run will produce:
 
 - some additional log files. By default, only the std OUT/ERR files will be provided;
 
-- .tar.gz: the application results available through the gLibrary Metadata Server.
+- .tar.gz: the application results available through the gLibrary_ Metadata Server.
 
 .. image:: images/ABINIT_input.jpg
    :width: 100px

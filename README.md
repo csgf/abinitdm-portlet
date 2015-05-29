@@ -3,7 +3,8 @@
 <h2>Requirements</h2>
 - JDK 7+
 - JSAGA libs (v1.1.x)
-- jsaga-job-management (v1.5.96+)
+- jsaga-job-management (v1.5.9+)
+- abinit-browse-portlet-6.1.1.1.war
 
 <h2>About the ABINIT application</h2>
 <p align="justify">
