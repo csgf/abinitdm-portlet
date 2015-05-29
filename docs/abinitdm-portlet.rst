@@ -94,7 +94,19 @@ The ABINIT_ input files consist of:
 
 - A file of files (.files).
 
-For demonstrative use cases, the user can also click on _'Run demo'_ and execute ABINIT_ with some pre-configured inputs.
+For demonstrative use cases, the user can also click on *'Run demo'* and execute ABINIT_ with some pre-configured inputs.
+
+Each run will produce:
+
+- std.txt: the standard output file;
+
+- std.err: the standard error file;
+
+- abinit.log: the application log file;
+
+- some additional log files. By default, only the std OUT/ERR files will be provided;
+
+- .tar.gz: the application results available through the gLibrary Metadata Server.
 
 .. image:: images/ABINIT_input.jpg
    :width: 100px
