@@ -128,7 +128,7 @@ A typical *simulation* log file produces the following files:
 
 .. _here: https://science-gateway.chain-project.eu/abinit_browse
 
-To inspect the ABINIT_ log files:
+To inspect ABINIT_ log files:
 
 - *navigate* the digital repository for the application clicking [ here_ ];
 
