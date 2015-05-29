@@ -114,7 +114,7 @@ Each run will produce:
 .. image:: images/ABINIT_input.jpg
    :align: center
 
-A typical *simulation* log file produces the following files:
+A typical simulation produces, at the end, the following files:
 
 .. code:: bash
 
