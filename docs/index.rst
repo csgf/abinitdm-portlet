@@ -121,13 +121,13 @@ A typical simulation will produce the following files:
 
 .. code:: bash
 
-]$ tree ABINITSimulationStarted_147780/
-ABINITSimulationStarted_147780/
-├── abinit.log
-├── curl.log
-├── env.log
-├── std.err
-└── std.txt
+        ]$ tree ABINITSimulationStarted_147780/
+        ABINITSimulationStarted_147780/
+        ├── abinit.log
+        ├── curl.log
+        ├── env.log
+        ├── std.err
+        └── std.txt
 
 ============
 References
