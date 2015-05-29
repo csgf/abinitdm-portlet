@@ -126,9 +126,9 @@ A typical *simulation* log file produces the following files:
         ├── std.err
         └── std.txt
 
-.. _browseURL: http://asrenorg.net/eage2014/sites/default/files/files/firstStepAbinit.ppt
+.. _here: https://science-gateway.chain-project.eu/abinit_browse
 
-To inspect the ABINIT_ log navigate the digital repository for the application clicking [ here browseURL_ ]
+To inspect the ABINIT_ log navigate the digital repository for the application clicking [ here_ ]
 and select the digital assets for downloading as shown in the figure below:
 
 .. image:: images/ABINIT_results.jpg
@@ -165,4 +165,4 @@ Please feel free to contact us any time if you have any questions or comments.
 
 :Version: v2.0.1, 2015
 
-:Date: May 28th, 2015 17:50
+:Date: May 29th, 2015 13:54
