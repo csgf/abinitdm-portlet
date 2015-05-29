@@ -118,6 +118,7 @@ Each run will produce:
    :align: center
 
 A typical simulation will produce the following files:
+
 .. code:: bash
 
         ]$ tree ABINITSimulationStarted_147780/
