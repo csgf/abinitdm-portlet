@@ -114,7 +114,7 @@ Each run will produce:
 .. image:: images/ABINIT_input.jpg
    :align: center
 
-A typical simulation will produce the following files:
+A typical *simulation* log file produces the following files:
 
 .. code:: bash
 
@@ -125,6 +125,14 @@ A typical simulation will produce the following files:
         ├── env.log
         ├── std.err
         └── std.txt
+
+.. _browseURL: http://asrenorg.net/eage2014/sites/default/files/files/firstStepAbinit.ppt
+
+To inspect the ABINIT_ log navigate the digital repository for the application clicking [ here browseURL_ ]
+and select the digital assets for downloading as shown in the figure below:
+
+.. image:: images/ABINIT_results.jpg
+      :align: center
 
 ============
 References
