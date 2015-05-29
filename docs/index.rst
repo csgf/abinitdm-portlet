@@ -97,7 +97,7 @@ The ABINIT_ input files consist of:
 
 - A file of files (.files).
 
-For demonstrative use cases, the user can also click on *'Run demo'* and execute ABINIT_ with some pre-configured inputs.
+For demonstrative use cases, the user can also click on *'Run demo'* check-box and execute ABINIT_ with some pre-configured inputs.
 
 Each run will produce:
 
