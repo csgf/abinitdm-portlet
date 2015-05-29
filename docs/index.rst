@@ -59,7 +59,6 @@ As soon as the portlet has been successfully deployed on the Science Gateway the
 In Fig. 1 is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
 
 .. image:: images/ABINIT_settings.jpg
-   :width: 100px
    :align: center
 
 2.) To configure the application, the following settings have to be provided:
@@ -82,7 +81,6 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 In Fig. 2 is shown how the application settings have been configured to run on the CHAIN-REDS_ Science Gateway.
 
 .. image:: images/ABINIT_settings2.jpg
-   :width: 100px
    :align: center
 
 ============
@@ -114,7 +112,6 @@ Each run will produce:
 - .tar.gz: the application results available through the gLibrary_ Metadata Server.
 
 .. image:: images/ABINIT_input.jpg
-   :width: 100px
    :align: center
 
 A typical simulation will produce the following files:
