@@ -56,7 +56,7 @@ As soon as the portlet has been successfully deployed on the Science Gateway the
 
 **WebDAV**: The EMI-3 DPM Grid Storage Element, with WebDAV interface, to be used for this e-Infrastructure;
 
-In Fig. 1 is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
+In the following figure is shown how the portlet has been configured to run simulation on the EUMEDGRID-Support e-Infrastructure.
 
 .. image:: images/ABINIT_settings.jpg
    :align: center
@@ -78,7 +78,7 @@ In Fig. 1 is shown how the portlet has been configured to run simulation on the 
 .. _CHAIN-REDS: https://science-gateway.chain-project.eu/
 .. _gLibrary: https://glibrary.ct.infn.it/
 
-In Fig. 2 is shown how the application settings have been configured to run on the CHAIN-REDS_ Science Gateway.
+In the figure below is shown how the application settings have been configured to run on the CHAIN-REDS_ Science Gateway.
 
 .. image:: images/ABINIT_settings2.jpg
    :align: center
