@@ -1,5 +1,5 @@
 *********************
-AbinitDM Docs
+AbinitDM
 *********************
 
 ============
@@ -149,7 +149,7 @@ References
 * CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"* – March 31, 2015 – Brussels, Belgium [2_];
 
 ============
-Support
+Contact
 ============
 Please feel free to contact us any time if you have any questions or comments.
 
@@ -166,6 +166,3 @@ Please feel free to contact us any time if you have any questions or comments.
 
  `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ - Algerian Research Network (ARN_),
 
-:Version: v2.0.1, 2015
-
-:Date: June 22nd, 2015 15:30
