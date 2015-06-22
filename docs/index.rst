@@ -1,5 +1,5 @@
 *********************
-AbinitDM v2.0.1 Docs
+AbinitDM Docs
 *********************
 
 ============
@@ -168,4 +168,4 @@ Please feel free to contact us any time if you have any questions or comments.
 
 :Version: v2.0.1, 2015
 
-:Date: May 29th, 2015 13:54
+:Date: June 22nd, 2015 15:30
