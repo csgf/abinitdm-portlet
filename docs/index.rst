@@ -149,7 +149,7 @@ References
 * CHAIN-REDS Conference: *"Open Science at the Global Scale: Sharing e-Infrastructures, Sharing Knowledge, Sharing Progress"* – March 31, 2015 – Brussels, Belgium [2_];
 
 ============
-Contact
+Contributor(s)
 ============
 Please feel free to contact us any time if you have any questions or comments.
 
@@ -158,11 +158,11 @@ Please feel free to contact us any time if you have any questions or comments.
 .. _ARN: http://www.grid.arn.dz/
 
 :Authors:
- `Giuseppe LA ROCCA <mailto:giuseppe.larocca@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+ Giuseppe LA ROCCA - Italian National Institute of Nuclear Physics (INFN_),
 
- `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_),
+ Mario TORRISI - University of Catania (DFA_),
 
- `Brahim LAGOUN <mailto:lag17_brahim@yahoo.fr>`_,
+ Brahim LAGOUN,
 
- `Ouafa BENTALB <mailto:o.bentaleb@grid.arn.dz>`_ - Algerian Research Network (ARN_),
+ Ouafa BENTALB - Algerian Research Network (ARN_)
 
