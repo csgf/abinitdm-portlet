@@ -35,7 +35,7 @@ before_install:
  - cd liferay-plugins-sdk-6.1.1/portlets
  - git clone https://github.com/csgf/abinitdm-portlet.git
 
-# Building
+# Building the portlet
 install:
  - cd abinitdm-portlet
  - ant all
