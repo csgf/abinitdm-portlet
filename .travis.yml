@@ -22,9 +22,9 @@ before_install:
  - cp travis/build.travis.properties liferay-plugins/liferay-plugins-sdk-6.1.1
  - cd liferay-plugins/liferay-plugins-sdk-6.1.1
  - git clone https://github.com/csgf/abinitdm-portlet.git
- - tree -L 2 $HOME/
+# - tree -L 2 $HOME/
 
 # Building
-#install:
-# - cd abinitdm-portlet
-# - ant all
+install:
+ - cd abinitdm-portlet
+ - ant all
