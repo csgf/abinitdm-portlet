@@ -11,7 +11,7 @@ cache:
 # First, get Liferay and configure the application server
 before_install: 
  - wget 'https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-glassfish-6.1.2-ce-ga3-20130816114619181.zip/download' -O liferay.zip
- - mkdir liferay
+# - mkdir liferay
  - unzip -o liferay.zip -d liferay
  - export LIFERAY_HOME=liferay/liferay-portal-6.1.2-ce-ga3
  - ls -lht $LIFERAY_HOME/*
