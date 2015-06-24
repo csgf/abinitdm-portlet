@@ -1,3 +1,7 @@
+[![Travis](http://img.shields.io/travis/csgf/OpenIdConnectLiferay/master.png)](https://travis-ci.org/csgf/OpenIdConnectLiferay)
+[![Documentation Status](https://readthedocs.org/projects/csgf/badge/?version=latest)](http://csgf.readthedocs.org)
+[![License](https://img.shields.io/github/license/csgf/abinitdm-portlet.svg?style?flat)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
 # abinitdm-portlet
 
 <h2>Requirements</h2>
