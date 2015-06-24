@@ -11,18 +11,18 @@ cache:
 # First, get Liferay and configure the application server
 before_install: 
  - wget 'https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-glassfish-6.1.2-ce-ga3-20130816114619181.zip/download' -O liferay.zip
-# - mkdir liferay
  - unzip -o liferay.zip -d liferay
- - export LIFERAY_HOME=liferay/liferay-portal-6.1.2-ce-ga3
- - ls -lht $LIFERAY_HOME/*
- - chmod +x liferay/liferay-portal-6.1.2-ce-ga3/glassfish-3.1.2.2/bin/*
+ - export HOME=liferay/liferay-portal-6.1.2-ce-ga3
+# - ls -lht $LIFERAY_HOME/*
+# - chmod +x liferay/liferay-portal-6.1.2-ce-ga3/glassfish-3.1.2.2/bin/*
 
 # Get the SDK and unpack it
-# - wget 'https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.1.2%20GA3/liferay-plugins-sdk-6.1.1-20130816114619181.zip?r=http%3A%2F%2Fwww.liferay.com%2Fdownloads%2Fliferay-portal%2Favailable-releases&ts=1403009833&use_mirror=garr' -O liferay-plugins-sdk.zip
-# - unzip -o liferay-plugins-sdk.zip -d liferay-plugins
-# - cp travis/build.travis.properties liferay-plugins/liferay-plugins-sdk-6.1.1
-# - cd liferay-plugins/liferay-plugins-sdk-6.1.1
-# - git clone https://github.com/csgf/abinitdm-portlet.git
+ - wget 'https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.1.2%20GA3/liferay-plugins-sdk-6.1.1-20130816114619181.zip?r=http%3A%2F%2Fwww.liferay.com%2Fdownloads%2Fliferay-portal%2Favailable-releases&ts=1403009833&use_mirror=garr' -O liferay-plugins-sdk.zip
+ - unzip -o liferay-plugins-sdk.zip -d liferay-plugins
+ - cp travis/build.travis.properties liferay-plugins/liferay-plugins-sdk-6.1.1
+ - cd liferay-plugins/liferay-plugins-sdk-6.1.1
+ - git clone https://github.com/csgf/abinitdm-portlet.git
+ - tree -L 2 $HOME/
 
 # Building
 #install:
