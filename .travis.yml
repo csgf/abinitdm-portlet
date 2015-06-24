@@ -6,7 +6,7 @@ jdk:
 
 # Get Liferay portal with the GlassFish application server
 before_install: 
- - apt-get install -y xml-commons-apis
+ #- apt-get install -y xml-commons-apis
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
  - mkdir -p ${INSTALL_ROOT}/deploy
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/autodeploy
