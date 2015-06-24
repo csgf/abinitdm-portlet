@@ -4,27 +4,38 @@ language: java
 jdk:
  - openjdk7
 
-cache:
- directories:
-  - liferay
+#cache:
+# directories:
+#  - liferay
 
-# First, get Liferay and configure the application server
+# Get Liferay portal with the GlassFish application server
 before_install: 
- - wget 'https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.2%20GA3/liferay-portal-glassfish-6.1.2-ce-ga3-20130816114619181.zip/download' -O liferay.zip
- - unzip -o liferay.zip -d liferay
- - export HOME=liferay/liferay-portal-6.1.2-ce-ga3
-# - ls -lht $LIFERAY_HOME/*
-# - chmod +x liferay/liferay-portal-6.1.2-ce-ga3/glassfish-3.1.2.2/bin/*
+ - apt-get install -y xml-commons-apis
+ - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
+ - mkdir -p ${INSTALL_ROOT}/deploy
+ - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/autodeploy
+ - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/lib
+ - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/tld
+ #- unzip -o plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
+ - wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
+ - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
+
+# Install dependencies
+#- tar zxvf plugins/lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+- cd ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+- wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
+- tar zxvf lib.tar.gz
+- cd -
 
 # Get the SDK and unpack it
- - wget 'https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.1.2%20GA3/liferay-plugins-sdk-6.1.1-20130816114619181.zip?r=http%3A%2F%2Fwww.liferay.com%2Fdownloads%2Fliferay-portal%2Favailable-releases&ts=1403009833&use_mirror=garr' -O liferay-plugins-sdk.zip
- - unzip -o liferay-plugins-sdk.zip -d liferay-plugins
- - cp travis/build.travis.properties liferay-plugins/liferay-plugins-sdk-6.1.1
- - cd liferay-plugins/liferay-plugins-sdk-6.1.1
+ #- unzip -o plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - cp plugins/build.properties liferay-plugins-sdk-6.1.1
+ - cd liferay-plugins-sdk-6.1.1/portlets
  - git clone https://github.com/csgf/abinitdm-portlet.git
- - tree -L 2 $HOME/
 
-# Building
-#install:
-# - cd abinitdm-portlet
-# - ant all
+# Building the abinitdm-portlet
+install:
+ - cd abinitdm-portlet
+ - ant all
