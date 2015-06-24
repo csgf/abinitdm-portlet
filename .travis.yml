@@ -1,0 +1,6 @@
+language: java
+
+#ant test
+jdk:
+- openjdk6
+- openjdk7
