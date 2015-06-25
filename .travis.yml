@@ -15,11 +15,12 @@ before_install:
  - wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
  - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
 
-# Install dependencies
-- cd ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+# Install additional dependencies
+#- cd ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
 - wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
-- tar zxvf lib.tar.gz
-- cd -
+- tar zxvf lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+#- tar zxvf lib.tar.gz
+#- cd -
 
 # Get the SDK and unpack it
 # - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
