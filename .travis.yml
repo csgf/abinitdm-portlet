@@ -17,16 +17,16 @@ before_install:
  - pwd
 
 # Install dependencies
-- wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
-- tar zxvf lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+#- wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
+#- tar zxvf lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
 
 # Get the SDK and unpack it
- - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
- - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
- - cp /home/travis/csgf/plugins/build.properties liferay-plugins-sdk-6.1.1
- - cp -r /home/travis/csgf/abinitdm-portlet/ liferay-plugins-sdk-6.1.1/portlets
+# - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+# - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+# - cp /home/travis/csgf/plugins/build.properties liferay-plugins-sdk-6.1.1
+# - cp -r /home/travis/csgf/abinitdm-portlet/ liferay-plugins-sdk-6.1.1/portlets
 
 # Building the abinitdm-portlet
-install:
- - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
- - ant all
+#install:
+# - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
+# - ant all
