@@ -23,8 +23,8 @@ before_install:
 #- cd -
 
 # Get the SDK and unpack it
-# - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
-# - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
 # - cp plugins/build.properties liferay-plugins-sdk-6.1.1
 # - cd liferay-plugins-sdk-6.1.1/portlets
 # - git clone https://github.com/csgf/abinitdm-portlet.git
