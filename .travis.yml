@@ -4,10 +4,10 @@ jdk:
  - openjdk7
 
 before_install: 
- #- sudo apt-get install xml-commons-apis
  - sudo apt-get update -qq
  - sudo apt-get install -y ant
  - sudo apt-get install -y ecj
+
  - export PORTLET=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
  - env
@@ -42,5 +42,4 @@ before_install:
 # Building the abinitdm-portlet
 install:
  - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
- - ant -v
  - sudo ant all
