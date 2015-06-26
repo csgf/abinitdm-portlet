@@ -36,9 +36,8 @@ before_install:
  - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
 
 # Get the ecj.jar
- #- wget http://grid.ct.infn.it/statistics/ecj.jar
- #- ls -lht /usr/java/*
- #- sudo cp ecj.jar /usr/java/apache-ant-1.8.2/lib/
+ - wget http://grid.ct.infn.it/statistics/ecj.jar
+ - sudo cp ecj.jar /usr/share/ant/lib/
 
 # Building the abinitdm-portlet
 install:
