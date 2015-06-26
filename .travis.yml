@@ -6,6 +6,7 @@ jdk:
 before_install: 
  #- sudo apt-get install xml-commons-apis
  - sudo apt-get update -qq
+ - sudo apt-get install -y ecj
  - export PORTLET=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
  - env
