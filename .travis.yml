@@ -15,7 +15,7 @@ before_install:
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/tld
  - wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
  - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
- - echo 'Workind dir = W_DIR'
+ - echo "Working dir = $W_DIR"
  - echo $INSTALL_ROOT
 
 # Install dependencies
