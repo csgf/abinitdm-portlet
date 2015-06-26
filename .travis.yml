@@ -19,7 +19,7 @@ before_install:
 
 # Get the Liferay portal with the GlassFish application server (v3.1.2)
  #- wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
- - wget http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip/download
+ - wget http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip/download -O liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
  - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
 
 # Install additional dependencies
@@ -28,7 +28,7 @@ before_install:
 
 # Get the SDK and unpack it
  #- wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
- - wget http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-plugins-sdk-6.1.1-ce-ga2-20121004092655026.zip/download
+ - wget http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-plugins-sdk-6.1.1-ce-ga2-20121004092655026.zip/download -O liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
  - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
  - ls -lht ${INSTALL_ROOT}/*
 
