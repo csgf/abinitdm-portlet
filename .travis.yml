@@ -36,7 +36,7 @@ before_install:
 
 # Get the ecj.jar
  - wget http://grid.ct.infn.it/statistics/ecj.jar
- - ls -lht /usr/java/apache-ant-1.8.2/*
+ - ls -lht /usr/java/*
  - sudo cp ecj.jar /usr/java/apache-ant-1.8.2/lib/
 
 # Building the abinitdm-portlet
