@@ -6,6 +6,7 @@ jdk:
 before_install: 
  #- sudo apt-get install xml-commons-apis
  - sudo apt-get update -qq
+ - sudo apt-get install -y mlocate
  - sudo apt-get install -y ecj
  - export PORTLET=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
@@ -35,6 +36,7 @@ before_install:
  - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
 
 # Get the ecj.jar
+ - sudo locate ecj.jar
  #- wget http://grid.ct.infn.it/statistics/ecj.jar
  #- ls -lht /usr/java/*
  #- sudo cp ecj.jar /usr/java/apache-ant-1.8.2/lib/
