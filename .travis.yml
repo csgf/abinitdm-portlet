@@ -6,7 +6,7 @@ jdk:
 before_install: 
  #- sudo apt-get install xml-commons-apis
  - sudo apt-get update -qq
- - export W_DIR=${PWD}
+ - export PORTLET=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
  - env
  - mkdir -p ${INSTALL_ROOT}/deploy
@@ -31,7 +31,7 @@ before_install:
 # Get the build.properties
  - wget http://grid.ct.infn.it/statistics/plugins/build.properties
  - cp build.properties liferay-plugins-sdk-6.1.1
- - cp -r /home/travis/csgf/abinitdm-portlet/ liferay-plugins-sdk-6.1.1/portlets
+ - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
 
 # Building the abinitdm-portlet
 #install:
