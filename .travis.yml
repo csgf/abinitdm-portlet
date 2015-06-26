@@ -6,6 +6,7 @@ jdk:
 # Get Liferay portal with the GlassFish application server
 before_install: 
  #- sudo apt-get install xml-commons-apis
+ - sudo apt-get update -qq
  - export W_DIR=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
  - mkdir -p ${INSTALL_ROOT}/deploy
@@ -14,7 +15,7 @@ before_install:
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/tld
  - wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
  - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
- - echo $W_DIR
+ - echo 'Workind dir = W_DIR'
  - echo $INSTALL_ROOT
 
 # Install dependencies
