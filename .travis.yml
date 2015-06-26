@@ -3,30 +3,33 @@ language: java
 jdk:
  - openjdk7
 
-# Get Liferay portal with the GlassFish application server
 before_install: 
  #- sudo apt-get install xml-commons-apis
  - sudo apt-get update -qq
  - export W_DIR=${PWD}
  - export INSTALL_ROOT=${HOME}/liferay-portal-6.1.1-ce-ga2
-# - echo "Working dir = $W_DIR"
-# - echo $INSTALL_ROOT
  - env
  - mkdir -p ${INSTALL_ROOT}/deploy
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/autodeploy
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/lib
  - mkdir -p ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/applications/liferay-portal/WEB-INF/tld
+ - cd ${HOME}
+
+# Get Liferay portal with the GlassFish application server
  - wget http://grid.ct.infn.it/statistics/plugins/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip 
  - unzip liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip
 
 # Install dependencies
-#- wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
-#- tar zxvf lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
+- wget http://grid.ct.infn.it/statistics/plugins/lib.tar.gz
+- tar zxvf lib.tar.gz -C ${INSTALL_ROOT}/glassfish-3.1.2/domains/domain1/
 
 # Get the SDK and unpack it
-# - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
-# - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
-# - cp /home/travis/csgf/plugins/build.properties liferay-plugins-sdk-6.1.1
+ - wget http://grid.ct.infn.it/statistics/plugins/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+ - unzip liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip
+
+# Get the build.properties
+ - wget http://grid.ct.infn.it/statistics/plugins/build.properties
+ - cp build.properties liferay-plugins-sdk-6.1.1
 # - cp -r /home/travis/csgf/abinitdm-portlet/ liferay-plugins-sdk-6.1.1/portlets
 
 # Building the abinitdm-portlet
