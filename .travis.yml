@@ -34,6 +34,6 @@ before_install:
  - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
 
 # Building the abinitdm-portlet
-#install:
-# - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
-# - ant all
+install:
+ - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
+ - ant all
