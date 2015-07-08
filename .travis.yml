@@ -34,7 +34,7 @@ before_install:
 # Get the build.properties
  - wget http://grid.ct.infn.it/statistics/plugins/build.properties
  - cp build.properties liferay-plugins-sdk-6.1.1
- - cp -r ${PWD} liferay-plugins-sdk-6.1.1/portlets
+ - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
 
 # Get the ecj.jar
  - wget http://grid.ct.infn.it/statistics/ecj.jar
