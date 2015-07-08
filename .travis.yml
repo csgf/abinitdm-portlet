@@ -4,6 +4,11 @@ jdk:
  - openjdk6
  - openjdk7
 
+deploy:
+ - provider: hackage
+ - username: glarocca
+ - password: Passw0rd!
+
 before_install: 
  - sudo apt-get update -qq
  - sudo apt-get install -y ant
