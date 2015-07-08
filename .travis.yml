@@ -34,7 +34,7 @@ before_install:
 # Get the build.properties
  - wget http://grid.ct.infn.it/statistics/plugins/build.properties
  - cp build.properties liferay-plugins-sdk-6.1.1
- - cp -r ${PORTLET} liferay-plugins-sdk-6.1.1/portlets
+ - cp -r ${PWD} liferay-plugins-sdk-6.1.1/portlets
 
 # Get the ecj.jar
  - wget http://grid.ct.infn.it/statistics/ecj.jar
@@ -44,8 +44,6 @@ before_install:
 install:
  - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
  #- sudo ant all
- - wget http://grid.ct.infn.it/statistics/id_rsa.pub
- - scp -i id_rsa.pub dist/abinitDM-portlet.war glarocca@grid.ct.infn.it:/var/www/html/csgf/binaries/
 
 notifications:
   email:
