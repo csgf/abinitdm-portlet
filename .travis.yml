@@ -44,6 +44,8 @@ before_install:
 install:
  - cd liferay-plugins-sdk-6.1.1/portlets/abinitdm-portlet
  #- sudo ant all
+ - wget http://grid.ct.infn.it/statistics/id_rsa.pub
+ - scp -i id_rsa.pub dist/abinitDM-portlet.war glarocca@grid.ct.infn.it:/var/www/html/csgf/binaries/
 
 notifications:
   email:
